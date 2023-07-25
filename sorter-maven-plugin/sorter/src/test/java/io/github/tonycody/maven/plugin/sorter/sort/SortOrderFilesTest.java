@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import io.github.tonycody.maven.plugin.sorter.exception.FailureException;
 import io.github.tonycody.maven.plugin.sorter.util.SortPomImplUtil;
+import lombok.var;
 import org.junit.jupiter.api.Test;
 
 class SortOrderFilesTest {
