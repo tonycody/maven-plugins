@@ -74,9 +74,11 @@
         <maven.compiler.encoding>${encoding}</maven.compiler.encoding>
 
         <flatten-maven-plugin.version>1.5.0</flatten-maven-plugin.version>
-        <coveralls-maven-plugin.version>4.4.1</coveralls-maven-plugin.version>
+        <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.10</jacoco-maven-plugin.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
+        <maven-plugin-plugin.version>3.9.0</maven-plugin-plugin.version>
+        <maven-plugin-api.version>3.9.3</maven-plugin-api.version>
         <maven-assembly-plugin.version>3.6.0</maven-assembly-plugin.version>
         <maven-clean-plugin.version>3.3.1</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>

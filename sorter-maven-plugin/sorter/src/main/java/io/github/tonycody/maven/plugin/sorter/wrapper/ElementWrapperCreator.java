@@ -1,6 +1,8 @@
 package io.github.tonycody.maven.plugin.sorter.wrapper;
 
-import static io.github.tonycody.maven.plugin.sorter.wrapper.ElementUtil.*;
+import static io.github.tonycody.maven.plugin.sorter.wrapper.ElementUtil.getDeepName;
+import static io.github.tonycody.maven.plugin.sorter.wrapper.ElementUtil.isElementName;
+import static io.github.tonycody.maven.plugin.sorter.wrapper.ElementUtil.isElementParentName;
 
 import io.github.tonycody.maven.plugin.sorter.parameter.DependencySortOrder;
 import io.github.tonycody.maven.plugin.sorter.parameter.PluginParameters;
