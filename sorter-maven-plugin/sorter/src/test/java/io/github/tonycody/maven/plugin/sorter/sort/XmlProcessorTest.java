@@ -1,0 +1,65 @@
+package io.github.tonycody.maven.plugin.sorter.sort;
+
+import io.github.tonycody.maven.plugin.sorter.util.XmlProcessorTestUtil;
+import org.junit.jupiter.api.Test;
+
+class XmlProcessorTest {
+
+    @Test
+    final void testSortXmlAttributes() throws Exception {
+        XmlProcessorTestUtil.create()
+                .predefinedSortOrder("default_0_4_0")
+                .testInputAndExpected(
+                        "src/test/resources/Attribute_input.xml", "src/test/resources/Attribute_expected.xml");
+    }
+
+    @Test
+    final void testSortXmlCharacter() throws Exception {
+        XmlProcessorTestUtil.create()
+                .testInputAndExpected(
+                        "src/test/resources/Character_input.xml", "src/test/resources/Character_expected.xml");
+    }
+
+    @Test
+    final void testSortXmlComplex() throws Exception {
+        XmlProcessorTestUtil.create()
+                .predefinedSortOrder("default_0_4_0")
+                .testInputAndExpected(
+                        "src/test/resources/Complex_input.xml", "src/test/resources/Complex_expected.xml");
+    }
+
+    @Test
+    final void testSortXmlFullFromAlphabeticalOrder() throws Exception {
+        XmlProcessorTestUtil.create()
+                .predefinedSortOrder("default_0_4_0")
+                .testInputAndExpected("src/test/resources/full_alfa_input.xml", "src/test/resources/full_expected.xml");
+    }
+
+    @Test
+    final void testSortXmlFullToAlphabetical() throws Exception {
+        XmlProcessorTestUtil.create()
+                .sortAlphabeticalOnly()
+                .testInputAndExpected(
+                        "src/test/resources/full_unsorted_input.xml", "src/test/resources/full_alfa_input.xml");
+    }
+
+    @Test
+    final void testSortXmlMultilineComment() throws Exception {
+        XmlProcessorTestUtil.create()
+                .testInputAndExpected(
+                        "src/test/resources/MultilineComment_input.xml",
+                        "src/test/resources/MultilineComment_expected.xml");
+    }
+
+    @Test
+    final void testSortXmlReal1() throws Exception {
+        XmlProcessorTestUtil.create()
+                .testInputAndExpected("src/test/resources/Real1_input.xml", "src/test/resources/Real1_expected.xml");
+    }
+
+    @Test
+    final void testSortXmlSimple() throws Exception {
+        XmlProcessorTestUtil.create()
+                .testInputAndExpected("src/test/resources/Simple_input.xml", "src/test/resources/Simple_expected.xml");
+    }
+}
