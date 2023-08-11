@@ -20,7 +20,7 @@ E.g.:
 <plugin>
     <groupId>io.github.tonycody.maven.plugins</groupId>
     <artifactId>sorter-maven-plugin</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <executions>
         <execution>
             <goals>
